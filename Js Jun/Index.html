@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Samples</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!--  -->
+  
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:200,300,400,500,600,700" rel="stylesheet">
+	<!--  -->
+
+	<!-- My styles -->
+	<link rel="stylesheet" href="style.css">
+	<!--  -->
+  
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-md navbar-light" id="nav">
+    <!-- Brand -->
+    <a class="navbar-brand" href="Index.html">George <span class=" violet" href="Index.html">Krook</span></a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto pr-5">
+        <li class="nav-item">
+          <a class="nav-link my_link" href="https://www.behance.net/krookweb"><i class="fab fa-behance fa-lg"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my_link" href="https://www.facebook.com/GeorG.Gruzhevskyi"><i class="fab fa-facebook fa-lg"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my_link" href="https://github.com/GeorgeKrook?tab=repositories"><i class="fab fa-github fa-lg"></i></a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container justify-content-center my-3 ">
+  <div class="row card py-3">
+    <div class="col-sm-10">
+        <div class="row justify-content-center">
+          <div class="col-sm-5 justify-content-center">
+            <img src="img/27395091_1769025359794706_1549458204_n.jpg" alt="" class="img-thumbnail">
+          </div>
+          <div class="col-sm-5 justify-content-center">
+            <h3>George Hruzhevskyj | Krook</h3>
+            <span class="des_text">krookweb@gmail.com</span>
+            <p>Hello my name is George and now I'll gonna show you my skills of Javascript (ES 6).
+              You can download it by the <a href="https://github.com/GeorgeKrook/Js-tricks">link</a>
+            </p>
+            <span class="mt-2">
+              Fonts : Oswald, Ubuntu Mono <br> 
+              Colors : <span class="color_red">#eb4d4b</span>,<span class="color_dark">#2d3436</span><br>
+            </span>
+            <div class="row mt-4">
+             <div class="col-sm-12">
+              <span>
+                <a href="https://www.behance.net/krookweb"> Behance</a>
+              </span>
+              </div>   
+            </div>
+          </div>
+        </div>
+     </div> 
+  </div>
+</div>
+
+<div id="app">
+  <div class="container ">
+    <div class="row ">
+      <div class="col-sm-12">
+        <div class="row row_item">
+          <div class="col-sm-6 card">
+             <div class="col_item p-1">
+              <div class="form-check">
+                <label class="form-check-label p-1">
+                   <input  class="form-check-input" type="checkbox" value="a2" id="check_one" 
+                   onchange="checkingBox()">
+                    If you check this chbox will be message >>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label p-1">
+                  <input  class="form-check-input" type="checkbox" value="a1" id="check_two" 
+                   onchange="checkingBox2()">
+                    If you check this chbox will be message >>
+                </label>
+              </div>
+             </div>  
+          </div>
+          <div class="col-sm-6 align-items-center terminal">
+             <div class="result_block p-1" id="result_1">
+              
+             </div> 
+             <div class="result_block p-1" id="result_2">
+              
+             </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="container my-3 ">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <div class="row ">
+        <div class="col-sm-6 p-3 card">
+          <h3>DOM</h3>
+          <span class="des_text">
+            Here are a few DOM-tricks which are must-have for junior js developer
+          </span>
+        </div>  
+        <div class="col-sm-6 terminal">
+          <div class=" p-3">
+            <span class="changable_texts" id="first_text" onclick="clickOnEl(this);">>>This is first changable text<<</span><br>
+            <span  class= "changable_texts"onclick="clickOnEl(this);">>>Here are others<<</span><br>
+            <span class= "changable_texts"onclick="clickOnEl(this);">>>Here are others<<</span><br>
+            <span class= "changable_texts"onclick="clickOnEl(this);">>>Here are others<<</span><br>      
+          </div>
+          <div class="p-2">
+          <button class="terminal_button" onclick="changeSingle(element1);">Change Single</button>
+          <button class="terminal_button" onclick="changeMultiply(element2);">Change Multiply</button>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+  </div>
+</div>
+<div class="container my-3 ">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <div class="row ">
+        <div class="col-sm-6 py-3 card">
+          <h3>DOM 2</h3>
+          <span class="des_text">
+            Here are a few DOM-tricks (p.2) which are must-have for junior js developer
+          </span><br>
+          <span class="des_text">
+            This is a card - prototype
+          </span>
+          <div class="container">
+            <div class="row my-2 ">
+              <div class="col-sm-6 p-sm-3 " id="card_person">
+                <button class="p-3" onclick="addingVirus();">Add virus in Terminal</button>
+              </div>
+            </div>
+           </div> 
+        </div>  
+        <div class="col-sm-6 terminal" >
+          <div class="row">
+            <div class="col-sm-3 py-5 my-5">
+              <button class="terminal_button tr_btn_2" onclick="clearingVirus();">Delete Virus</button>
+            </div>
+            <div class="col-sm-6" id="add_link">
+              
+            </div>
+          </div>
+        </div>  
+    </div>
+  </div>
+</div>
+</div>
+<div class="container my-3 ">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <div class="row ">
+        <div class="col-sm-6 py-3 card">
+          <h3>Selector</h3>
+          <div class="col-sm-3 pt-3">
+            <select name="Skills" id="myselect" onchange="chagingSelect();">
+              <option value="">Html</option>
+              <option value="">Css3 (bootstrap)</option>
+              <option value="">JS</option>
+              <option value="">UX</option>
+              <option value="">Graphic design</option>
+            </select>
+          </div>  
+        </div>  
+        <div class="col-sm-6 terminal" >
+          <div class="row">
+            <div class="col-sm-12 p-5 selected_result" id="result_selection">
+             
+            </div>
+          </div>
+        </div>  
+    </div>
+  </div>
+</div>
+</div>
+<div class="container my-3 ">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <div class="row ">
+        <div class="col-sm-6 py-3 card">
+          <h3>Input Range</h3>
+          <div class="col-sm-3 pt-3">
+
+            <input type="range" min="0" max='100' step="1" oninput="changeRange();" id="range_id">
+          </div>  
+        </div>  
+        <div class="col-sm-6 terminal" >
+          <div class="row">
+            <div class="col-sm-12 pt-2 selected_result" id="result_range">
+             <span id= "range_result_numbers">0</span>
+             <div class="mt-2 mb-4" id="ch_block"></div>
+            </div>
+          </div>
+        </div>  
+    </div>
+  </div>
+</div>
+</div>
+<div class="container my-3 ">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <div class="row ">
+        <div class="col-sm-6 py-3 card">
+          <h3>CSS Generator</h3>
+          <div class="col-sm-3 pt-3">
+            <label for="">
+              Border radius - top-left  
+              <input type="range" min="0" max='100' step="1" oninput="changeBorRad();" id="br_r_tl">
+              <input type="text" value="0" id="br_t_tl">
+            </label>
+            <label for="">
+              Border radius - top-right
+              <input type="range" min="0" max='100' step="1" oninput="changeBorRad();" id="br_r_tr">
+              <input type="text" value="0" id="br_t_tr">
+            </label>
+            <label for="">
+              Border radius - bottom-right
+              <input type="range" min="0" max='100' step="1" oninput="changeBorRad();" id="br_r_br">
+              <input type="text" value="0" id="br_t_br">
+            </label>
+            <label for="">
+              Border radius - bottom-left
+              <input type="range" min="0" max='100' step="1" oninput="changeBorRad();" id="br_r_bl">
+              <input type="text" value="0" id="br_t_bl">
+            </label>
+          </div>  
+        </div>  
+        <div class="col-sm-6 terminal p-5" >
+          <div class="row p-sm-5 justify-content-center">
+            <div class="col-sm-10 my-5 selected_result" id="generator_result">
+             
+            </div>
+          </div>
+        </div>  
+    </div>
+  </div>
+</div>
+</div>
+<div class="container my-3 ">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <div class="row ">
+      <div class="col-sm-6 p-3 card">
+        <h3>Thanks for eatching</h3>
+      </div>
+      <div class="col-sm-6 terminal  p-3">
+        Have a nice day
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<script  src="js/main.js">
+  
+</script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
